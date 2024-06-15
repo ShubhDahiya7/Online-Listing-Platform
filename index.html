@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>List-Items Platform</title>
+</head>
+<body>
+<header id="main-header" class="bg-secondary text-white p-4 mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 id="header-title">Item Lister Web App</h1>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <input type="text" class="form-control" id="filter" placeholder="Search Items...">
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div id="main" class="card card-body">
+        <h2 class="title">Add Items</h2>
+        <form id="addForm" class="form-inline mb-3">
+            <input type="text" class="form-control mr-2" id="item">
+            <input type="submit" class="btn btn-dark" value="Submit">
+        </form>
+        <h2 class="title">Items</h2>
+        <ul id="items" class="list-group">
+            <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+            <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+            <li class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+            <li class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+        </ul>
+    </div>
+    <div class="container mt-5 border">
+        <h6>Using Vanilla JS and DOM</h6>
+        <h7>BY - Shubham</h7>
+    </div>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<!-- JS file is always included at the bottom so that html and css files can load properly
+      first -->
+<script src="script.js"></script>
+</body>
+</html>
